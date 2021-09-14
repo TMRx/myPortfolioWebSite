@@ -1,0 +1,160 @@
+@import "../../global.scss";
+
+.contact{
+    background-color:white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+
+    .left{
+        flex: 1;
+        overflow: hidden;
+
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 10px;
+                margin-left: 10px;
+        
+        
+            .React-icon{
+                width: 31%;
+                height: 25%;
+            } 
+            .htmlicon{
+                width: 39%;
+                height: 30%;
+            }
+            .css-icon{
+                width: 28%;
+                height: 20%;
+            }
+            .javascript-icon{
+                width: 36%;
+                height: 20%;
+            }
+            .typesript-icon{
+                width: 30%;
+               margin: 10px;
+            }
+            .Sassicon{
+                width: 28%;
+                margin: 10px;
+            }
+            @include mobile{
+                margin-top: 10px;
+                margin-left: 10px;
+                 .React-icon{
+                    width: 26%;
+                    height: 25%;
+                 }
+                 .htmlicon{
+                    width: 34%;
+                    height: 25%;
+                }
+                .css-icon{
+                    width: 25%;
+                    height: 20%;
+                }
+                .javascript-icon{
+                    width: 31%;
+                    height: 20%;
+                }
+                .typesript-icon{
+                    width: 29%;
+                   margin: 10px;
+                }
+                .Sassicon{
+                    width: 28%;
+                    margin: 10px;
+                }
+
+
+            }
+
+         }
+
+    }
+    .right{
+        background-color:#769EEC;;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center ;
+
+        @include mobile{
+            justify-content:start;
+
+        }
+
+
+        h2{
+            font-size: 35px;
+            color:black;
+        }
+
+        form{
+            width: 60%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+
+
+            input{
+                width: 300px;
+                height: 25px;
+                font-size: 15px;
+                //  
+                border-radius: 7px;
+                    @include mobile{
+                        width: 200px;
+                        height: 20px;
+                    }
+             
+            }
+
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 15px;
+                border:none;
+                border-radius: 7px;
+                color: black;
+
+                @include mobile{
+                    width: 200px;
+                    height: 100px;
+                }
+            }
+            button{
+                width: 150px;
+                height: 30px;
+                color: #f3f3f7;
+                background-color:black;
+                border:none;
+                border-radius: 7px;
+                font-weight:800;
+
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+
+            span{
+                color:rgb(5, 119, 5);
+            }
+        }
+
+    }
+
+}
